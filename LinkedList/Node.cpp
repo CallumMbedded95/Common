@@ -10,6 +10,8 @@ class Node {
 public:
 	Node(T data_) : data(data_) {}
 
+	~Node() {}
+
 	inline Node* getNext() {
 		return this->next;
 	}
