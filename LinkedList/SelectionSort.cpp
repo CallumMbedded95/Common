@@ -4,10 +4,9 @@
 
 template<class T>
 class SelectionSort {
-
 public:
-	SelectionSort();
-	~SelectionSort();
+	SelectionSort() {}
+	~SelectionSort() {}
 	// Unoptimised sort
 	static Node<T>* SelectionSort_(Node<T>* head) {
 		Node<T>* tmp = head;		
