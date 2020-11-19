@@ -10,7 +10,7 @@ public:
 	static void MergeSort_(Node<T>** head) {
 		Node<T>* midpoint = nullptr;
 
-		if (*head != nullptr && (*head)->getNext() != nullptr){
+		if (*head != nullptr && (*head)->getNext() != nullptr) {
 			Split(head, &midpoint);
 
 			MergeSort_(head);
@@ -20,6 +20,7 @@ public:
 		}
 	}
 
+private:
 	static Node<T>* SortedMerge(Node<T>* left, Node<T>* right) {
 		Node<T>* result = nullptr;
 

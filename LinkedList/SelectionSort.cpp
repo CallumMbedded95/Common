@@ -19,6 +19,7 @@ public:
 
 		return head;
 	}
+	
 private:
 	static void SortOnHead(Node<T>** head) {
 		Node<T>* tmp = *head;
